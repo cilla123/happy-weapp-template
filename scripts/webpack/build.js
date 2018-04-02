@@ -5,13 +5,13 @@ const fs = require('fs')
 const webpack = require('webpack')
 const _ = require('lodash')
 const r = url => resolve(process.cwd(), url)
-const config = require('../config')
-const webpackConf = require('./webpack.conf')
+const config = require('../../config')
+const webpackConf = require('./webpack.config.base')
 
 const assetsPath = config.assetsPath
 
 console.log(assetsPath)
-// rm('-rf', assetsPath)
+rm('-rf', assetsPath)
 mkdir(assetsPath)
 
 const renderConf = webpackConf

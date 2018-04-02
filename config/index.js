@@ -1,7 +1,7 @@
 const { resolve } = require('path')
 const r = url => resolve(__dirname, url)
-const assetsPath = resolve(process.cwd(), '../../happy-weapp-template')
-
+const assetsPath = resolve(process.cwd(), '../dist')
+console.log(assetsPath)
 module.exports = {
     "json": {
         "pages": [

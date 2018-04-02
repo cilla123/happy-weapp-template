@@ -4,6 +4,7 @@
   "description": "happy小程序脚手架模板",
   "main": "app.js",
   "scripts": {
+    "dev": "node ./scripts/webpack/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -10,7 +10,7 @@ const extractSass = new ExtractTextPlugin({
   filename: '[name].wxss'
 })
 
-const config = require('../config')
+const config = require('../../config')
 
 module.exports = {
   devtool: false,
@@ -66,7 +66,7 @@ module.exports = {
         test: /\.happy$/,
         loader: 'happy-weapp-loader',
         options: {
-          dist: './happy'
+          dist: './dist'
         }
       }
     ]
