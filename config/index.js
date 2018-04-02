@@ -30,7 +30,7 @@ module.exports = {
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "#fff"
     },
     "assetsPath": assetsPath,
     "app": r('../app.js')

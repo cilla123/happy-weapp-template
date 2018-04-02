@@ -1,4 +1,4 @@
-import './style/index.sass'
+import './styles/index.sass'
 import './vendor'
 
 // app.js

@@ -83,9 +83,6 @@ module.exports = {
       to: 'static'
     }]),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   souceMap: false
-    // }),
     new ProgressBarPlugin()
   ]
 }

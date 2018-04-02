@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "node ./scripts/webpack/build.js",
+    "build": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,7 @@
     "url": "git+https://github.com/cilla123/happy-weapp-template.git"
   },
   "keywords": [
-    "小程序"
+    "小程序", "小程序脚手架", "模板"
   ],
   "author": "Ben赖珏豪",
   "license": "MIT",
@@ -46,6 +47,7 @@
     "shelljs": "^0.7.8",
     "style-loader": "^0.18.2",
     "vue-template-compiler": "^2.3.4",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "webpack-merge": "^4.1.2"
   }
 }
