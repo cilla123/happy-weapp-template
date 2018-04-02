@@ -1,7 +1,7 @@
 const { resolve } = require('path')
 const r = url => resolve(__dirname, url)
-const assetsPath = resolve(process.cwd(), '../dist')
-console.log(assetsPath)
+const assetsPath = resolve(process.cwd(), './dist')
+
 module.exports = {
     "json": {
         "pages": [
