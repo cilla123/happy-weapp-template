@@ -93,6 +93,9 @@ module.exports = {
     }, {
       from: 'static',
       to: 'static'
+    }, {
+      from: 'components',
+      to: 'components'
     }]),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new ProgressBarPlugin()

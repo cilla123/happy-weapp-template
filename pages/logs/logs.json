@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "capText": "/components/capText/capText",
+      "swiper": "/components/swiper/swiper"
+    }
+  }

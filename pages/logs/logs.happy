@@ -1,9 +1,10 @@
 <template>
   <view class="container log-list">
-    <block wx:for="{{logs}}" wx:for-item="log" wx:key="{{ index }}">
-      <text class="log-item">{{index + 1}}. {{log}}</text>
-    </block>
-     <text>日志页面啊，小哥哥</text>
+    <text>日志页面啊，小哥哥</text>    
+    <capText title="自定义组件，改变颜色" fontColor="red"></capText>
+    <view class="swiper-view">
+      <swiper images="{{ images }}"></swiper>          
+    </view>
   </view>
 </template>
 
@@ -13,7 +14,17 @@
 
     Page({
       data: {
-        logs: []
+        logs: [],
+        images: [
+          {
+            id: 1,
+            url: 'https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1522751286&di=a2f46b63e6db712b484d0f79db81e7c9&src=http://imgsrc.baidu.com/imgad/pic/item/bf096b63f6246b60553a62a0e1f81a4c510fa22a.jpg',
+          },
+          {
+            id: 2,
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522761384951&di=c2981795b10b943e310d8a6c68179937&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F3801213fb80e7beca9004ec5252eb9389b506b38.jpg',
+          }
+        ]
       },
       onLoad: function () {
         this.setData({
@@ -28,4 +39,7 @@
 
 <style lang="sass" scoped>
   // 利用scoped不会影响  
+  .swiper-view
+    width: 100%
+    height: 100rpx
 </style>

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+      "capText": "/components/capText/capText"
+    }
+  }
