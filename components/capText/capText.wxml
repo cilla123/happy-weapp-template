@@ -1,0 +1,5 @@
+<view class="cap-text" bind:tap="tapHandler" >
+    <view class="p10 {{ textAlign }}" style="background-color: {{ backgroundColor }};">
+        <text class="{{ fontSize }} {{ big }}" style="color: {{ fontColor }};">{{ title }}</text>
+    </view>
+</view>

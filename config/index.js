@@ -25,12 +25,14 @@ module.exports = {
                     "text": "日志"
                 },
             ]
-        }
-    },
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "#fff"
+        },
+        "window": {
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationBarTextStyle": "black",
+            "navigationBarTitleText": "Happy weapp template",
+            "backgroundColor": "#eeeeee",
+            "backgroundTextStyle": "light"
+        },
     },
     "assetsPath": assetsPath,
     "app": r('../app.js')

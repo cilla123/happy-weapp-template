@@ -19,7 +19,7 @@
 
   Page({
     data: {
-      motto: 'Hello World',
+      motto: 'Hello Happy weapp template',
       userInfo: {},
       hasUserInfo: false,
       canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -69,3 +69,8 @@
   })
 
 </script>
+
+<style lang="sass" scoped>
+    // 利用scoped不会影响
+      
+</style>

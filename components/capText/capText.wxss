@@ -1,0 +1,33 @@
+.cap-text{
+    display: flex;
+    word-break: break-all;
+}
+
+.p10{
+    padding: 20rpx;
+    width: 100%;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.big{
+    font-size: 36rpx;
+}
+
+.middle{
+    font-size: 28rpx;
+}
+
+.small{
+    font-size: 24rpx;
+}

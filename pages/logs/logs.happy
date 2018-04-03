@@ -1,13 +1,14 @@
 <template>
   <view class="container log-list">
-    <block wx:for="{{logs}}" wx:for-item="log">
+    <block wx:for="{{logs}}" wx:for-item="log" wx:key="{{ index }}">
       <text class="log-item">{{index + 1}}. {{log}}</text>
     </block>
+     <text>日志页面啊，小哥哥</text>
   </view>
 </template>
 
 <script>
-  //logs.js
+    //logs.js
     const util = require('../../utils/util.js')
 
     Page({
@@ -24,3 +25,7 @@
     })
 
 </script>
+
+<style lang="sass" scoped>
+  // 利用scoped不会影响  
+</style>
