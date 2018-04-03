@@ -4,8 +4,7 @@ const webpack = require('webpack')
 
 module.exports = webpackMerge(webpackBase, {
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            souceMap: false
-        }),
+        
     ]
 })
+

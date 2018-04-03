@@ -4,8 +4,8 @@
   "description": "happy小程序脚手架模板",
   "main": "app.js",
   "scripts": {
-    "dev": "node ./scripts/webpack/build.js",
-    "build": "",
+    "dev": "cross-env NODE_ENV=development node ./scripts/webpack/build.js",
+    "build": "cross-env NODE_ENV=production node ./scripts/webpack/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +13,9 @@
     "url": "git+https://github.com/cilla123/happy-weapp-template.git"
   },
   "keywords": [
-    "小程序", "小程序脚手架", "模板"
+    "小程序",
+    "小程序脚手架",
+    "模板"
   ],
   "author": "Ben赖珏豪",
   "license": "MIT",
@@ -36,9 +38,11 @@
     "babel-preset-latest": "^6.24.1",
     "consolidate": "^0.14.5",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.4",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "happy-weapp-loader": "^1.0.3",
+    "happypack": "^4.0.1",
     "node-sass": "^4.5.3",
     "postcss": "^6.0.2",
     "postcss-loader": "^2.0.5",

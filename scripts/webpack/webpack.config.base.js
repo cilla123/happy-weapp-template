@@ -1,6 +1,4 @@
-const {
-  resolve
-} = require('path')
+const { resolve } = require('path')
 const r = url => resolve(__dirname, url)
 const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
