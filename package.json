@@ -1,6 +1,6 @@
 {
   "name": "happy-weapp-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "happy小程序脚手架模板",
   "main": "app.js",
   "scripts": {
