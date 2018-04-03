@@ -4,10 +4,10 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const extractSass = new ExtractTextPlugin({
-  filename: '[name].wxss'
-})
+const HappyPack = require('happypack')
+const extractSass = new ExtractTextPlugin({ filename: '[name].wxss' })
 
+const happyThreadPool = require('./happypack-thread-pool')
 const config = require('../../config')
 
 module.exports = {
@@ -24,13 +24,8 @@ module.exports = {
   module: {
     rules: [{
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: 'happypack/loader?id=babel',
         exclude: /node_modules/,
-        options: {
-          presets: [
-            'latest'
-          ]
-        }
       },
       {
         test: /\.sass$/,
@@ -62,15 +57,34 @@ module.exports = {
       },
       {
         test: /\.happy$/,
-        loader: 'happy-weapp-loader',
-        options: {
-          dist: './dist'
-        }
+        loader: 'happypack/loader?id=happyweapp',
       }
     ]
   },
   plugins: [
     extractSass,
+    new HappyPack({
+      id: "babel",
+      loaders: [{
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            'latest'
+          ]
+        }
+      }],
+      threadPool: happyThreadPool
+    }),
+    new HappyPack({
+      id: "happyweapp",
+      loaders: [{
+        loader: 'happy-weapp-loader',
+        options: {
+          dist: './dist'
+        }
+      }],
+      threadPool: happyThreadPool
+    }),
     new CopyWebpackPlugin([{
       from: {
         glob: 'pages/**/*.json',
